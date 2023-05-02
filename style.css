@@ -1,3 +1,52 @@
+:root{
+    --g1: rgb
+}
+
+
 *{
     background-color: black;
+    color:white;
+}
+.profile_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.profile_icon #circle{
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #096814 0%, #233329 74%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile_icon #circle img{
+    width: 90%;
+    height: 90%;
+    border-radius: 75%;
+}
+.profile_icon h1{
+    margin: 15px;
+    background: linear-gradient(315deg, #096814 0%, #233329 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space:nowrap;
+    background-size: 200%;
+    animation: text 3s linear infinite;
+}
+@keyframes text {
+    from{
+        background-position: 0% center;
+    }
+    to{
+        background-position: -200% center;
+    }
 }
