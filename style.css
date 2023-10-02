@@ -1,5 +1,5 @@
 :root{
-    --g1: rgb
+    --g1: #63d471;
 }
 
 
@@ -7,7 +7,7 @@
     background-color: black;
     color:white;
 }
-.profile_icon{
+.profile_Icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +16,8 @@
     width: 100%;
 }
 
-.profile_icon #circle{
-    background-color: #63d471;
+.profile_Icon .circle{
+    background-color: var(--g1);
     background-image: linear-gradient(315deg, #096814 0%, #233329 74%);
     border-radius: 50%;
     width: 100px;
@@ -26,17 +26,19 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-right:276px ;
 
 }
-.profile_icon #circle img{
+.profile_Icon .circle img{
     width: 90%;
     height: 90%;
     border-radius: 75%;
 }
-.profile_icon h1{
+.profile_Icon h1{
     margin: 15px;
     background: linear-gradient(315deg, #096814 0%, #233329 74%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space:nowrap;
     background-size: 200%;
